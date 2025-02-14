@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #fff;
+    color: #333;
+    text-align: center;
+    transition: background 0.3s, color 0.3s;
+}
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+}
+h1 { color: #0073e6; }
+.icon {
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.dark-mode {
+    background: #333;
+    color: #fff;
+}
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #0073e6;
+    margin-bottom: 10px;
+}
