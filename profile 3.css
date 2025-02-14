@@ -1,32 +1,37 @@
 body {
+    font-family: 'Poppins', sans-serif;
     display: flex;
 }
 .sidebar {
-    width: 200px;
+    width: 250px;
     height: 100vh;
     background: #0073e6;
     color: white;
     padding: 20px;
+    position: fixed;
 }
 .sidebar nav a {
     display: block;
-    color: white;
-    margin: 10px 0;
+    padding: 10px;
     text-decoration: none;
+    color: white;
+    transition: background 0.3s;
+}
+.sidebar nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
 }
 .content {
+    margin-left: 270px;
     padding: 20px;
-    width: 100%;
 }
-.card-inner.flipped {
-    transform: rotateY(180deg);
+.card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
 }
-.profile-pic {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    object-fit: cover;
-    display: block;
-    margin: 10px auto;
-    border: 2px solid white;
+.card:hover {
+    transform: translateY(-5px);
 }
